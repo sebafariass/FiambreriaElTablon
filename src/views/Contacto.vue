@@ -4,10 +4,8 @@
 
 <script>
 export default {
-
-}
+  name: "Contacto"
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

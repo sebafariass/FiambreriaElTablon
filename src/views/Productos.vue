@@ -1,15 +1,13 @@
 <template>
   <div>
-      <h1>ALO PENSANDO!</h1>
+    <h1>ALO PENSANDO!</h1>
   </div>
 </template>
 
 <script>
 export default {
- name: "Principal",
-}
+  name: "Productos"
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

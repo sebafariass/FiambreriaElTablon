@@ -1,20 +1,14 @@
 <template>
-  <div >
-  
-   <h2>HOLA</h2>
- 
- 
+  <div>
+    <h2>HOLA</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Vistas",
-
+  name: "Vistas"
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
