@@ -1,13 +1,26 @@
 <template>
-  <div>
-    <h1>ALO PENSANDO!</h1>
+  <div >
+    <h1 class="text-center mb-5">Productos Definir</h1>
+    <Grilla />
   </div>
 </template>
 
 <script>
+import Grilla from "@/components/Grilla.vue";
+
 export default {
-  name: "Productos"
+  name: "Productos",
+  components: {
+   Grilla
+    
+   
+   
+  }
 };
 </script>
 
-<style></style>
+<style lang="scss">
+ h1{
+   font-family: 'Roboto Mono', monospace;
+ }
+</style>
