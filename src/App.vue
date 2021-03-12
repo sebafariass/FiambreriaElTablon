@@ -13,24 +13,17 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import { mapActions } from "vuex";
+
 
 
 export default {
   name: "App",
 
   components: {
-
+   
+ 
+   
    Navbar
-  },
-    created() {
-    this.getDataUsers()
-   
-  },
-  methods: {
-   
-     ...mapActions(["getDataUsers"]),
-  
   },
 
   data: () => ({
@@ -38,6 +31,3 @@ export default {
   })
 };
 </script>
-<style lang="scss">
- 
-</style>
