@@ -17,7 +17,8 @@ import {mapState} from "vuex";
 export default {
   name: "Contacto",
 components: {
-   Vistas
+   Vistas,
+  
     
    
    

@@ -2,8 +2,10 @@
   <div>
     <h1>PROBANDO HOME</h1>
 
-    <v-col md="4" v-for="(personaje, i) in users" :key="i">
-      <v-img class="imgDog" :src="personaje.data.img"></v-img>
+  <v-col v-for="(personaje, i) in fiambre" :key="i">
+        
+           <h6  class="text-center">{{ personaje.data.name}}</h6>
+           <h5 class="text-center">{{ personaje.data.valor}}</h5>    
     </v-col>
 
     <v-file-input
@@ -28,6 +30,7 @@ export default {
   name: "Home",
   computed: {
     ...mapState(["users"]),
+    ...mapState(["fiambre"]),
   },
 
   components: {

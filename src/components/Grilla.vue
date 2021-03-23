@@ -1,21 +1,21 @@
 <template>
- <div>
+ <div class="footy2">
        <div class="grid">
    <v-col v-for="(personaje, i) in users" :key="i">
          <v-img  class="imgDog"  :src="personaje.data.img"></v-img>
-         <h6  class="text-center mb-3">{{ personaje.data.name}}</h6>
-         <h4 class="text-center">{{ personaje.data.valor}}</h4>    
+        
+           <h6  class="text-center">{{ personaje.data.name}}</h6>
+           <h5 class="text-center">{{ personaje.data.valor}}</h5>
+               
     </v-col>
-   
-
-
-  
+    
 </div>
  
         
 
        
    </div>
+   
 </template>
 
 <script>
@@ -25,6 +25,7 @@ import {mapState} from "vuex";
 
 export default {
 name: "Grilla",
+ 
 
 
  computed: {
@@ -48,42 +49,36 @@ name: "Grilla",
     display:grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15%;
-   gap: 15px;
-   
-
-    
-
+   gap: 25px;
 }
 .grid div {
- background: rgb(231, 194, 159);
   color: black;
-  border-radius: 20%; 
   height: 80%;
- 
-  
   
 
-  
 }
 .imgDog:hover{
-  
-
 transform: translateY(5px);
   
 }
 
 h4{
-  background-color: rgb(29, 90, 21);
-  color: rgb(201, 169, 169);
+  color:red;
   border-radius: 20%;
 }
 
 .imgDog{
     width: 100%;
-    height: auto;
+    height: 70%;
 
 }
 
+.footy2{
+     min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
 
 
 @media (max-width: 999px) {
@@ -92,7 +87,9 @@ h4{
     display: grid;
      grid-template-columns: 50% 50%;
      row-gap: 20px;
-
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  
   
 }
   .imgDog{
