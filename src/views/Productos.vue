@@ -1,5 +1,5 @@
 <template>
-  <div  >
+ 
 
     
     <div class="grid2">
@@ -26,7 +26,7 @@
 
     </div>
 
-  </div>
+  
 </template>
 
 <script>
@@ -53,7 +53,6 @@ export default {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 40px;
-  
 }
 @media (min-width: 780px) {
   
@@ -92,22 +91,37 @@ export default {
   font-family: 'Bebas Neue', cursive;
   display:inline-block;
   text-align: right;
-  background-image: url(../assets/fiambre.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: inherit;
-  padding: 50px;
-  border-radius: 20%;
   
 
+ 
+  
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/fiambre.jpg);
+    opacity: 0.6;
+     border-radius: 20%;
+      background-repeat: no-repeat;
+     background-size: cover;
+     background-position: inherit;
+     right: 0;
+     
 
+
+ 
+  
+}
  }
  
 
 .lateral_font{
-  color: rgb(29, 90, 21);
+  
  font-family: 'Oswald', sans-serif;
  font-size: 15px;
+ position: relative;
+  color: rgb(24, 70, 3);
  
 }
 

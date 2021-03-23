@@ -84,6 +84,8 @@ h4{
 
 }
 
+
+
 @media (max-width: 999px) {
   
 .grid{
