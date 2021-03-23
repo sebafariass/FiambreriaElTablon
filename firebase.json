@@ -12,6 +12,6 @@
     ]
   },
   "storage": {
-    "rules": "y"
+    "rules": "storage.rules"
   }
 }

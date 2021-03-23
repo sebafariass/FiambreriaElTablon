@@ -1,7 +1,13 @@
 <template>
   <div class="navy">
     <b-navbar toggleable type="dark" variant="dark">
-      <b-navbar-brand to="/">Fiambreria El Tablon</b-navbar-brand>
+         <b-navbar-nav >
+       
+               <b-nav-item to="/">Que passa</b-nav-item>
+
+          </b-navbar-nav>
+      
+ 
 
       <b-navbar-toggle target="navbar-toggle-collapse">
         <template #default="{ expanded }">
@@ -34,5 +40,9 @@ export default {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+h1{
+  align-content: center;
+  
 }
 </style>

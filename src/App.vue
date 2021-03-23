@@ -2,6 +2,7 @@
  
    
   <v-app >
+    
 		<Navbar />
 		<v-main>
 			<v-container >
@@ -25,12 +26,15 @@ export default {
   },
     created() {
     this.getDataUsers()
+    this.getDataEdades()
+     this.getDataFiambre()
    
   },
   methods: {
    
      ...mapActions(["getDataUsers"]),
-  
+     ...mapActions(["getDataEdades"]),
+     ...mapActions(["getDataFiambre"]),
   },
 
   data: () => ({

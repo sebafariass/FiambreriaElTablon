@@ -1,10 +1,33 @@
 <template>
-  <h4>Aqui esto es contactoo</h4>
+
+   <div>
+
+ 
+  <Vistas />
+
+    
+  </div>
 </template>
 
 <script>
+
+
+import Vistas from "@/components/Vistas.vue";
+import {mapState} from "vuex";
 export default {
-  name: "Contacto"
+  name: "Contacto",
+components: {
+   Vistas
+    
+   
+   
+  },
+
+   computed: {
+ 
+    ...mapState(["edades"]),
+   ...mapState(["fiambre"]),
+  },
 };
 </script>
 
