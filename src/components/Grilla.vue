@@ -4,7 +4,8 @@
    <v-col v-for="(personaje, i) in users" :key="i">
          <v-img  class="imgDog"  :src="personaje.data.img"></v-img>
         
-           <h6  class="text-center">{{ personaje.data.name}}</h6>
+           <h6  class="text-center mt-3 titulo">{{ personaje.data.name}}</h6>
+           <h6  class="text-center">{{ personaje.data.descripcion}}</h6>
            <h5 class="text-center">{{ personaje.data.valor}}</h5>
                
     </v-col>
@@ -43,13 +44,17 @@ name: "Grilla",
   font-family: 'Roboto Mono', monospace;
 }
 
+.titulo{
+  font-weight: bold ;
+}
+
 .grid{
    width: 100%;
     height: 70%;
     display:grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15%;
-   gap: 25px;
+     grid-template-rows: repeat(12, 1fr);
+    row-gap: 75px;
 }
 .grid div {
   color: black;

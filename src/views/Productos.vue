@@ -9,9 +9,11 @@
       <div class="lateral_font"> 
           <h1>Fiambrería El Tablón</h1>
           <h2 class="mt-5">Tiene disponible a la venta productos frescos</h2>
+            <h3>Productos pueden ser en Trozo ó Laminado</h3>
         <h4 class="mt-5">Despacho a Domicilio</h4>
         <h4 class="mt-5">Horario</h4>
         <h3 class="mt-5"> 18:00 Hrs - 20:30 Hrs</h3>
+      
         
     </div>
    </div>

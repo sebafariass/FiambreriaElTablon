@@ -1,7 +1,7 @@
 {
   "firestore": {
-    "rules": "y",
-    "indexes": "y"
+    "rules": "storage.rules",
+    "indexes": "storage.rules"
   },
   "hosting": {
     "public": "public",
